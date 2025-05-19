@@ -18,13 +18,28 @@ console.log(globalConst); // Вывод: "Я глобальная констан
 //Block Scope
 // console.log(blockVar);
 // console.log(blockLet);
-function show(){
-    var functionVar = "Я переменная с блочной областью видимости";
-    let functionLet = "Я let с блочной областью видимости";
-    const functionConst = "Я const с блочной областью видимости";
-    }
-show();
+// function show(){
+//     var functionVar = "Я переменная с блочной областью видимости";
+//     let functionLet = "Я let с блочной областью видимости";
+//     const functionConst = "Я const с блочной областью видимости";
+//     }
+// show();
     
-console.log(functionVar); // Выдает ReferenceError
-console.log(functionLet); // Выдает ReferenceError
-console.log(functionConst); // Выдает ReferenceError
+// console.log(functionVar); // Выдает ReferenceError
+// console.log(functionLet); // Выдает ReferenceError
+// console.log(functionConst); // Выдает ReferenceError
+{
+    var newVar = "hello";
+    let newLet = "goodbuy";
+    const newConst = "goodDay";
+    newVar = 10;
+    newLet = 20;
+    // newConst = 30;
+}
+
+newVar = "igor";
+newLet = "Ira";
+newConst = "who";
+console.log(newVar);
+console.log(newLet);
+console.log(newConst);
