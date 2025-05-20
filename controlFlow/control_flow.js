@@ -46,3 +46,19 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let user = prompt("Who are you?" );
+let message;
+switch (user) {
+    case "employer":
+        console.log("You have access to Diatic services");
+        break;
+    case "enrolled participant":
+        console.log("You have access to part od diaetic services");
+        break;
+    case "subscriber":
+        console.log("You have full access to diaetic services");
+        break;
+    default:
+        console.log("You must register or subscribe our platform");
+}
