@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>Калькулятор площади прямоугольника</title>
+</head>
+<body>
+    <section id="calculSquare">
+        <h1>Калькулятор площади прямоугольника</h1>
+        <label for="length">Введите длину: </label>
+        <input type="number" id="length"><br><br>
+
+        <label for="width">Введите ширину: </label>
+        <input type="number" id="width"><br><br>
+
+        <button onclick="calculateArea()">Рассчитать площадь</button><br><br>
+
+        <p id="result"></p>
+    </section>
+    <section id="groceryTracker">
+        <h2>Calculate products</h2>
+        <label for="grocery-">Enter Grocery-1 Amount:</label>
+        <input type="number" id="grocery-1"><br>
+
+        <label for="grocery-2">Enter Grocery-1 Amount:</label>
+        <input type="number" id="grocery-2"><br>
+
+        <label for="grocery-2">Enter Grocery-1 Amount:</label>
+        <input type="number" id="grocery-3"><br>
+
+        <button onclick="grocerySum()">Calculate Total Amount</button>
+        <p id="groceryAmount"></p>
+    </section>
+<script src="./calculate_Area.js"></script>
+</body>
+</html>
